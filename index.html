@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisyUi and tailwind link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font-awesome link -->
+    <script src="https://kit.fontawesome.com/5bc7c6321e.js" crossorigin="anonymous"></script>
+
+    <!-- external css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fav-icon -->
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+
+    <title>DaisyUi Layout</title>
+</head>
+
+<body class="scroll-smooth">
+    <!-- header -->
+    <header class="">
+        <nav class=" w-full h-24 max-w-7xl py-3 mx-auto flex items-center justify-between px-5">
+            <!-- logo -->
+            <div>
+                <a href="#" class="text-xl">Custom Slider</a>
+            </div>
+            <!--nav link -->
+            <div id="nav-link"
+                class="absolute bg-slate-600 md:bg-transparent duration-500 md:static md:min-h-fit min-h[60vh] left-0 top-[-100%] w-full md:w-auto flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center py-10 md:py-0 gap-8 md:gap-[4vw]">
+                    <li>
+                        <a class="hover:text-gray-400 font-semibold text-lg" ref="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-400 font-semibold text-lg" href="#">Products</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-400 font-semibold text-lg" href="#">Developers</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-400 font-semibold text-lg" href="#">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- button -->
+            <div class="gap-6 flex items-center">
+                <button class="btn btn-primary">Get Start</button>
+                <i id="toggle" onclick="toggleMenu()"
+                    class="fa-solid fa-3x fa-bars md:hidden cursor-pointer duration-300"></i>
+            </div>
+
+        </nav>
+    </header>
+    <!-- main section  -->
+    <main class="w-full max-w-7xl mx-auto">
+        <!-- slider -->
+        <section>
+            <div class="h-[550px] w-10/12 mx-auto">
+                <img id="imgEl" class="w-full rounded-md h-full" src="img/img1.jpg" alt="">
+            </div>
+        </section>
+    </main>
+    <!-- footer section -->
+
+    <footer>
+
+    </footer>
+
+    <!-- JS -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
